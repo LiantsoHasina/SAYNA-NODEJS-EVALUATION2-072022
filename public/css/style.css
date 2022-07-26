@@ -17,8 +17,11 @@
 .menu ul li{
 	list-style: none;
 	margin: 0 30px;
-	color: #0e0101;
 	cursor: pointer;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: #0e0101;
 }
 
 .logo img{
