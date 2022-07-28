@@ -5,6 +5,7 @@ const port = 3000
 app.use(express.static('public'))
 app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/image', express.static(__dirname + 'public/image'))
+app.use('/js', express.static(__dirname + 'public/js'))
 
 // home page
 app.get('/', (req, res) => {
