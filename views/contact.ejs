@@ -2,26 +2,12 @@
 
 	<head>
 		
-		<title> D- CLIC  </title>
+		
         <link rel="stylesheet" href="./css/style.css">
 	</head>
 
 	<body>
-		
-		<div class ="container"> 
-			<div class ="menu"> 
-	            <ul>
-	            	<li class="logo"> <img src="./image/sayna.jpg"> </li>
-	            	<li><a href="/">Home</a> </li>
-	            	<li><a href="backend">BackEnd</a> </li>
-	            	<li><a href="frontend">FrontEnd</a> </li>
-					<li><a href="marketing">Marketing Digital</a> </li>
-					<li><a href="uxui">UX/UI</a> </li>
-	            	<li><a href="contact">Contact</a> </li>
-	            	<!-- <li> <a href = "#" class="signup-btn"> <span> Sign Up </span> </a> </li> -->
-	            </ul>
 
-			</div>
 
 			<div class = "banner" > 
 
@@ -45,30 +31,32 @@
 					<h2>Notez la formation</h2>
 				
 				<div>
-				  <form action="/action_page.php">
+				  <form action="/action_page" method="POST">
 					<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">
+					<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 				
 					<label for="lname">Last Name</label>
 					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 				
 					<label for="avis">Votre avis</label>
-					<input type="text" id="avis" name="avis" placeholder="donnez votre avis sur la formation..">
+					<input type="text" id="avis" name="avis" placeholder="donnez votre avis sur la formation.." required>
 				
-					<label for="Note">Note</label>
-					<input type="number" id="Note" name="note" min="1" max="5" placeholder="votre note ..">
+					<label for="Note">Note (entre 1 à 5)</label>
+					<input type="number" id="Note" name="note" min="1" max="10" placeholder="votre note .." required>
 				
 					<label for="formation">Formation</label>
 					<select id="formation" name="formation">
-					  <option value="Frontent">Frontend</option>
+					  <option value="Frontend">Frontend</option>
 					  <option value="Backend">Backend</option>
 					  <option value="Marketing">Marketing</option>
 					  <option value="UX-UI">UX-UI</option>
 					</select>
 				  
-					<input type="submit" value="Submit">
+					<input type="submit" value="Submit" name="submit_button">
 				  </form>
 				</div>
+				
+				
 				
 				</body>
 				

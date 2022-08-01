@@ -2,27 +2,26 @@
 
 	<head>
 		
-		<title> D- CLIC  </title>
+		
         <link rel="stylesheet" href="./css/style.css">
 	</head>
 
 	<body>
-		
+
 		<div class ="container"> 
 			<div class ="menu"> 
-	            <ul>
-	            	<li class="logo"> <img src="./image/sayna.jpg"> </li>
-	            	<li><a href="/">Home</a> </li>
-	            	<li><a href="backend">BackEnd</a> </li>
-	            	<li><a href="frontend">FrontEnd</a> </li>
+				<ul>
+					<li class="logo"> <img src="./image/sayna.jpg"> </li>
+					<li><a href="/">Home</a> </li>
+					<li><a href="backend">BackEnd</a> </li>
+					<li><a href="frontend">FrontEnd</a> </li>
 					<li><a href="marketing">Marketing Digital</a> </li>
 					<li><a href="uxui">UX/UI</a> </li>
-	            	<li><a href="contact">Contact</a> </li>
-	            	<!-- <li> <a href = "#" class="signup-btn"> <span> Sign Up </span> </a> </li> -->
-	            </ul>
-
+					<li><a href="contact">Contact</a> </li>
+					<li> <a href = "#" class="signup-btn"> <span> Sign Up </span> </a> </li>
+				</ul>
+	
 			</div>
-
 			<div class = "banner" > 
 
 				<div class="app-text"> 
@@ -46,9 +45,29 @@
 					  <div class="flip-box-inner">
 						<div class="flip-box-front">
 						  <h2>Avis des utilisateurs le uxui</h2>
+						  <% design.slice(0, 2).forEach(el=>{ %> 
+							<div class="box-avis">
+							  
+							<p>
+							  <%= el.testimony %> <br>
+							  <span>- <%= el.firstName %> <br>
+								  note: <%= el.note %></span>
+							</p>
+							
+							</div>
+						  <% }) %>
 						</div>
 						<div class="flip-box-back">
 						  <h2>Suite</h2>
+						  <% design.slice(-2).forEach(el=>{ %> 
+							<div class="box-avis box-back-avis">
+							  <p class="myNotes">
+								  <%= el.testimony %> <br>
+								  <span>- <%= el.firstName %> <br>
+									  note: <%= el.note %></span>
+								</p>
+							</div>
+							<% }) %> 
 						</div>
 					  </div>
 					</div>

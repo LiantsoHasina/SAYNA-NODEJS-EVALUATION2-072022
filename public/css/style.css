@@ -203,4 +203,20 @@ input[type=number], select {
 	color: white;
 	transform: rotateY(180deg);
   }
-  
+
+.box-avis{
+	margin-bottom: 2px;
+}
+.box-avis p {
+	font-weight: bold;
+}
+.box-avis p span{
+	font-size: small;
+	margin-left: 70%;
+}
+.box-back-avis{
+	background-color: #316cda;
+}
+.myNotes{
+	color: white;
+  }
